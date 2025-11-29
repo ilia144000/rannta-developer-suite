@@ -1,11 +1,14 @@
+export interface RANNTAConfig {
+    tonapiBaseUrl?: string;
+}
 export declare class RANNTA {
-    config: {
-        apiKey: string;
-        network: string;
+    private tonapi;
+    constructor(config?: RANNTAConfig);
+    jetton: {
+        getBalance: (address: string) => Promise<bigint>;
+        getHolders: (limit: number) => Promise<{
+            address: string;
+            balance: bigint;
+        }[]>;
     };
-    constructor(config: {
-        apiKey: string;
-        network: string;
-    });
-    ping(): Promise<string>;
 }

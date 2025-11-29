@@ -1,14 +1,23 @@
 # RANNTA Developer Suite
 
-This repository contains the complete developer tooling for the RANNTA ecosystem:
+Official developer toolkit for the RANNTA Jetton on The Open Network (TON).
 
-- \@rannta/sdk\: Core TypeScript/JavaScript SDK
-- \@rannta/react\: React hooks and provider
-- \@rannta/tools\: CLI utilities
-- Documentation site
-- API playground
-- Docker environment
-- Integration tests and examples
+This monorepo contains:
 
-All packages are designed to treat RANNTA as a protocol-entity on the TON network and integrate with the RANNTAverse marketplace and NexusBridge.
+- `rannta-sdk` — TypeScript/JavaScript SDK for RANNTA
+- CLI tools (local) — helper scripts for balances and holder export
+- Future React bindings — planned hooks and provider layer
 
+## Jetton Master (RANNTA)
+
+`EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR`
+
+## Install SDK
+
+```bash
+npm install rannta-sdk
+Build all packages
+bash
+Copy code
+npm run build --workspaces
+This repository is the canonical developer entry point for the RANNTA ecosystem.
