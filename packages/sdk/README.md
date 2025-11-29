@@ -1,14 +1,13 @@
+📘 rannta-sdk
 
-rannta-sdk
-Official TypeScript/JavaScript SDK for the RANNTA Jetton on TON.
+Official TypeScript/JavaScript SDK for interacting with the RANNTA Protocol-Entity (RANNTA Jetton) on The Open Network (TON).
 
-Install
-bash
-Copy code
+This SDK provides simple and typed access to Jetton balances, metadata, holders, and TonAPI-powered analytics.
+
+🚀 Install
 npm install rannta-sdk
-Quick Start
-ts
-Copy code
+
+⚡ Quick Start
 import { RANNTA } from "rannta-sdk";
 
 const client = new RANNTA({
@@ -17,20 +16,37 @@ const client = new RANNTA({
 });
 
 async function main() {
-  const address = "UQDKJfVh5jnM0eGlOanDXWl6d8fleIZjoc7SHakWuxS6m4bL";
-  const balance = await client.getJettonBalance(address);
+  const wallet = "UQDKJfVh5jnM0eGlOanDXWl6d8fleIZjoc7SHakWuxS6m4bL";
+  const balance = await client.getJettonBalance(wallet);
 
-  console.log("Raw:", balance.rawBalance);
-  console.log("Human:", balance.humanReadable, "RANNTA");
+  console.log("Raw balance:", balance.rawBalance);
+  console.log("Human readable:", balance.humanReadable, "RANNTA");
 }
 
 main().catch(console.error);
-Jetton
+
+🧩 Features
+
+Fetch Jetton balances for any TON wallet
+
+TonAPI-powered metadata access
+
+Strong TypeScript typings
+
+Zero dependencies on TON client libraries
+
+Designed for marketplace, wallet, and backend use cases
+
+🪙 Jetton Information
+
 Name: RANNTA
 
 Network: TON
 
-Jetton master: EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR
+Jetton Master Address:
 
-License
+EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR
+
+📄 License
+
 MIT

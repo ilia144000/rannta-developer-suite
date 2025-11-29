@@ -1,30 +1,38 @@
+🔧 RANNTA CLI Tools
 
-RANNTA CLI (local tools)
-Local CLI utilities for working with the RANNTA Jetton using the built cli.js file.
+Local command-line utilities for interacting with the RANNTA Jetton using the compiled cli.js script.
 
-Build
-From the repo root:
+Designed for developers, analysts, indexers, and service integrators.
 
-bash
-Copy code
+🛠 Build
+
+Run from the repository root:
+
 npm run build --workspaces
-Commands (local)
-Run from the repo root:
 
-1. Jetton balance
-bash
-Copy code
+🧰 Commands (Local Only)
+🔹 1. Jetton Balance
 node .\packages\tools\dist\cli.js jetton:balance <TON_ADDRESS>
+
+
 Example:
 
-bash
-Copy code
 node .\packages\tools\dist\cli.js jetton:balance UQDKJfVh5jnM0eGlOanDXWl6d8fleIZjoc7SHakWuxS6m4bL
-2. Export holders
-bash
-Copy code
-node .\packages\tools\dist\cli.js export:holders 500
-This will create holders.csv in the repo root.
 
-Jetton master
+🔹 2. Export Jetton Holders
+node .\packages\tools\dist\cli.js export:holders 500
+
+
+Generates:
+
+holders.csv
+
+
+in the repository root.
+
+🪙 Jetton Master
 EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR
+
+📄 License
+
+MIT
