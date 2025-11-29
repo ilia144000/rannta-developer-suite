@@ -1,12 +1,14 @@
 # RANNTA Developer Suite
 
-Official monorepo for the RANNTA ecosystem developer tools.
+This repository contains the complete developer tooling for the RANNTA ecosystem:
 
-This repository will contain:
-- @rannta/sdk (Core TypeScript SDK)
-- @rannta/react (React hooks for RANNTA)
-- @rannta/tools (CLI tools)
-- Documentation site (docs.rannta.com)
-- API playground (playground.rannta.com)
+- \@rannta/sdk\: Core TypeScript/JavaScript SDK
+- \@rannta/react\: React hooks and provider
+- \@rannta/tools\: CLI utilities
+- Documentation site
+- API playground
+- Docker environment
+- Integration tests and examples
 
-More updates coming soon.
+All packages are designed to treat RANNTA as a protocol-entity on the TON network and integrate with the RANNTAverse marketplace and NexusBridge.
+

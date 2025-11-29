@@ -1,0 +1,17 @@
+{
+  "name": "@rannta/react",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "peerDependencies": {
+    "react": "^18.0.0"
+  },
+  "dependencies": {
+    "@rannta/sdk": "0.1.0"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "echo \"no tests yet\"",
+    "lint": "eslint src --ext .tsx,.ts"
+  }
+}
