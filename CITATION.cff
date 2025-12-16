@@ -1,20 +1,20 @@
 cff-version: 1.2.0
+type: software
 title: "RANNTA Protocol"
-message: "If you use this protocol or software components, please cite it as below."
+message: "If you use this protocol, developer tooling, or software components, please cite it as below."
 authors:
   - family-names: Ghafari
     given-names: Ilia
     orcid: https://orcid.org/0009-0001-9044-4662
 repository-code: https://github.com/ilia144000/rannta-developer-suite
 url: https://rannta.com
-license: MIT
+license: "MIT"
 version: "1.0.0"
 date-released: "2025-12-01"
 abstract: >
-  Core protocol and developer tooling for the RANNTA ecosystem.
-  This repository contains smart contract logic, routing components,
-  and infrastructure code supporting the RANNTAverse and associated
-  on-chain applications.
+  Core protocol implementation and developer tooling for the RANNTA ecosystem.
+  This repository includes smart contract logic, routing components, and
+  infrastructure code supporting the RANNTAverse and related on-chain applications.
 keywords:
   - RANNTA Protocol
   - Web3
@@ -22,3 +22,14 @@ keywords:
   - Blockchain Infrastructure
   - Smart Contracts
   - DeFi
+preferred-citation:
+  type: software
+  title: "RANNTA Protocol"
+  authors:
+    - family-names: Ghafari
+      given-names: Ilia
+      orcid: https://orcid.org/0009-0001-9044-4662
+  url: https://rannta.com
+  version: "1.0.0"
+  date-released: "2025-12-01"
+  license: "MIT"
